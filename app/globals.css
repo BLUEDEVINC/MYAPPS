@@ -1,0 +1,29 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --panel: 247 248 251;
+  --surface: 255 255 255;
+  --border: 221 224 233;
+  --text: 21 29 46;
+  --muted: 97 106 124;
+  --accent: 67 103 255;
+}
+
+.dark {
+  --panel: 14 19 29;
+  --surface: 22 29 42;
+  --border: 52 63 84;
+  --text: 236 240 250;
+  --muted: 150 160 182;
+  --accent: 117 150 255;
+}
+
+body {
+  @apply bg-panel text-text antialiased;
+}
+
+.card {
+  @apply rounded-xl border border-border bg-surface shadow-sm;
+}
